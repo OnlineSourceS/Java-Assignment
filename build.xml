@@ -1,0 +1,12 @@
+<project default="build">
+    <target name="build">
+        <mkdir dir="./target/build/classes"/>
+        <javac srcdir="./src" destdir="./target/build/classes"/>
+        <jar destfile="./target/build/HelloWorld.jar" basedir="./target/build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="HelloWorld"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
+
