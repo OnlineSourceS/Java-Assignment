@@ -1,8 +1,8 @@
 <project default="build">
     <target name="build">
-        <mkdir dir="./target/build/classes"/>
-        <javac srcdir="./src" destdir="./target/build/classes"/>
-        <jar destfile="./target/build/HelloWorld.jar" basedir="./target/build/classes">
+        <mkdir dir="./build/classes"/>
+        <javac srcdir="./src" destdir="./build/classes"/>
+        <jar destfile="./build/Main.jar" basedir="./build/classes">
             <manifest>
                 <attribute name="Main-Class" value="HelloWorld"/>
             </manifest>
